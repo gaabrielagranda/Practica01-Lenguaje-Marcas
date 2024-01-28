@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #8d365a;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box,
+.cromo {
+    width: 30%;
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.album .box img,
+.cromo img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Set a maximum height for all images */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cromo p {
+    margin-top: 10px;
+}
+
+.elemento {
+    width: 70px;
+    height: 70px;
+    border: solid 1px black;
+    margin: 5px; /* Agrega un pequeño margen entre las imágenes */
+}
+
+.cromos1 img,
+.cromos2 img,
+.cromos3 img,
+.cromos4 img,
+.cromos5 img,
+.cromos6 img,
+.cromos7 img,
+.cromos8 img {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Ajusta la altura máxima de las imágenes dentro de los contenedores cromos */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajusta el diseño para pantallas aún más pequeñas */
+    .box,
+    .cromo {
+        width: 100%;
+    }
+}
